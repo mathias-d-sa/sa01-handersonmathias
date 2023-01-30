@@ -22,8 +22,14 @@ public class Principal {
 		// Utilizar o Objeto
 		JOptionPane.showMessageDialog(null, cbo.Somar(valor1, valor2));
 		
+		String resp1 = JOptionPane.showInputDialog("Digite o faturamento de Janeiro: ");
+		String resp2 = JOptionPane.showInputDialog("Digite o faturamento de Fevereiro: ");
+		double valorJan = Double.parseDouble(resp1);
+		double valorFev = Double.parseDouble(resp2);
 		
-
+		JOptionPane.showMessageDialog(null, "Média Bimestral Fat. : " + cbo.calcularMedia(valorJan, valorFev));
+		
+		
 	}
 
 }
